@@ -1,0 +1,44 @@
+<html>
+<head>
+   <title>Weebox Issue Reporter</title>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+  
+   <style>
+      h1 {text-align: center;}
+   </style>
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.css"
+   rel="stylesheet" type="text/css">
+<link
+   href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.css"
+   rel="stylesheet" type="text/css">
+<link
+   href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.css"
+   rel="stylesheet" type="text/css">
+</head>
+<body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-widgets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/1.2.0/bokeh-tables.js"></script>
+<h1>Weebox Issue Reporter</h1>
+<div id='cssmenu'>
+<ul>
+   <li><a href={{url_for('index')}}><span>Home</span></a></li>
+    <li><a href={{url_for('visualization')}}><span>Vizualization</span></a></li>
+    <li><a href={{url_for('queryexecutor')}}><span>Query Executor</span></a></li>
+   <li><a href={{url_for('report')}}><span>Reports</span></a></li>
+   <li><a href={{url_for('scheduler')}}><span>Scheduler</span></a></li>
+    
+</ul>
+</div>
+
+{{ div|safe }}
+{{ script|safe }}
+
+</body>
+</html>
+
+

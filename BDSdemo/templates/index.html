@@ -1,0 +1,53 @@
+<html>
+<head>
+   <title>Weebox Issue Reporter</title>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   
+  
+   <style>
+      h1 {text-align: center;}
+   </style>
+ 
+</head>
+<body>
+   <img src="{{url_for('static', filename='bits_logo.png')}}" />
+  
+<h1>Weebox Issue Reporter</h1>
+<div id='cssmenu'>
+<ul>
+   <li><a href={{url_for('index')}}><span>Home</span></a></li>
+    <li class='active has-sub'><a href='#'><span>Vizualization</span></a>
+      <ul>
+        
+         <li class='has-sub'><a href="{{url_for('index')}}"><span>Candidate visualization</span></a>
+
+         </li>
+         <li class='has-sub'><a href="{{url_for('index')}}"><span>Proctor visualization</span></a>
+
+         </li>
+         <li class='has-sub'><a href="{{url_for('index')}}"><span>Exam session visualization</span></a>
+
+         </li>
+         <li class='has-sub'><a href="{{url_for('index')}}"><span>Adhoc visualization</span></a>
+
+         </li>
+      </ul>
+   </li>
+    <li><a href={{url_for('queryexecutor')}}><span>Query Executor</span></a></li>
+   <li><a href={{url_for('report')}}><span>Reports</span></a></li>
+   <li><a href={{url_for('scheduler')}}><span>Scheduler</span></a></li>
+    
+</ul>
+
+</div>
+
+<div>
+  
+   </div>
+</body>
+</html>
